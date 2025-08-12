@@ -1,0 +1,17 @@
+---
+- name: File Module
+  hosts: all
+
+  tasks:
+  - name: Creating a file
+    file:
+      path: /tmp/newfile.txt
+      state: touch
+      owner: bitgladiator
+      group: bitgladiator
+      mode: u=rwx,g=rw,o=r
+  
+  - name: Creating a directory
+    file:
+      path: /tmp/myfolder
+      state: directory 
