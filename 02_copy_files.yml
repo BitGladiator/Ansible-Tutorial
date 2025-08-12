@@ -1,0 +1,12 @@
+---
+- name: Copying files to remote
+  hosts: all
+
+  tasks:
+  - name: Copy files
+    copy:
+      src: /root/my_file.txt
+      dest: /tmp/
+      owner: bitgladiator
+      group: bitgladiator
+      mode: ugo=rw

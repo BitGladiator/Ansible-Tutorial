@@ -1,6 +1,6 @@
 ---
 - name: First Basic PB
-  hosts: localhost
+  hosts: all
 
   tasks:
   - name: Test Connectivity
