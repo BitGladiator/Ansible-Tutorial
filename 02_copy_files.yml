@@ -10,3 +10,4 @@
       owner: bitgladiator
       group: bitgladiator
       mode: ugo=rw
+      backup: true
