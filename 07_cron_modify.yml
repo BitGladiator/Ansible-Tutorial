@@ -5,7 +5,11 @@
   tasks:
   - name: Remove Cron Job 
     cron:
-      name: Run Test Script
-      state: absent 
+      name: PATH 
+      env: yes
       user: bitgladiator
+      job: /tmp/script/
+      insertbefore: VAR
+   
+
 
