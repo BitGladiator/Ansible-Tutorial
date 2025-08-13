@@ -1,0 +1,12 @@
+---
+- name: Download Files
+  hosts: all
+  
+  tasks:
+  - name: Download File
+    get_url: 
+      url: https://www.python.org/ftp/python/3.13.6/Python-3.13.6.tar.xz
+      dest: /tmp/script
+      owner: bitgladiator
+      group: bitgladiator
+      mode: 0777
